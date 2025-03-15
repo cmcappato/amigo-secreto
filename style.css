@@ -88,7 +88,8 @@ body {
 }
 
 .button-container {
-    width: 300px;
+    display: flex;
+    gap: 10px;
     justify-content: center;
 }
 
@@ -143,20 +144,29 @@ ul {
 }
 
 /* Botón de sortear título */
-.button-draw {
+.button-draw,
+.button-reset {
     display: flex;
     align-items: center;
-    width: 100%;
-    padding: 10px 40px;
+    width: auto;
+    padding: 10px 20px;
     color: var(--color-white);
     background-color: var(--color-button);
+    cursor: pointer;
     font-size: 16px;
+    white-space: nowrap;
 }
 
-.button-draw img {
-    margin-right: 40px;
+.button-draw img,
+.button-reset img {
+    margin-right: 20px;
 }
 
-.button-draw:hover {
+.button-draw:hover,
+.button-reset:hover {
     background-color: var(--color-button-hover);
+}
+
+.result-list li {
+    display: inline;
 }
