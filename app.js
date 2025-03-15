@@ -51,8 +51,10 @@ function reiniciarSorteo() {
 
 function sortearAmigo() {
     if(listaDeAmigos.length >= 2) {
+        
         let amigoSorteado = parseInt(Math.random() * listaDeAmigos.length);
         let resultado = document.querySelector("#resultado");
+        resultado.innerHTML = "";
 
         let mostrarResultado = document.createElement("li");
         mostrarResultado.innerHTML = `El amigo sorteado es: ${listaDeAmigos[amigoSorteado]}`;
